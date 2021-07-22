@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/sooty/nodes/SavableTween.gd" type="Script" id=1]
+[ext_resource path="res://scenes/effects/bloom/bloom.gd" type="Script" id=2]
+
+[sub_resource type="Environment" id=1]
+background_mode = 4
+glow_intensity = 0.35
+glow_strength = 1.11
+glow_bloom = 0.11
+glow_blend_mode = 0
+glow_bicubic_upscale = true
+
+[node name="bloom" type="WorldEnvironment"]
+environment = SubResource( 1 )
+script = ExtResource( 2 )
+
+[node name="tween" type="Tween" parent="."]
+script = ExtResource( 1 )
+
+[node name="MenuButton" type="OptionButton" parent="."]
+margin_right = 250.0
+margin_bottom = 41.0
+text = "Item what"
+items = [ "Item 0", null, false, 0, false, "0", null, false, 0, false, "Item 1", null, false, 0, false, "1", null, false, 0, false ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}

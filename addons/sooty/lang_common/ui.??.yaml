@@ -1,0 +1,33 @@
+start: Artst
+continue: Inuecont
+save: Vesa
+load: Adlo
+erase: Aseer
+back: Ckba
+quit: Itqu
+extra: Traex
+settings: Tingsset
+controls: Trolscon
+language: Guagelan
+credits: Ditscre
+achievements: Ementsachiev
+rewards: Ardsrew
+
+# Audio
+audio: Dioau
+volume: Lumevol
+sound: Undso
+music: Sicmu
+ambience: Enceambi
+mute: Temu
+
+# Graphics
+graphics: Phicsgra
+quality: Lityqua
+high: Ghhi
+medium: Iummed
+low: Owl
+
+# Window
+windowed: Dowedwin
+full_screen: Llfu Eenscr

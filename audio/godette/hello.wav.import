@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/hello.wav-bb102531d54d712b2cc90b5887ff0abf.sample"
+
+[deps]
+
+source_file="res://audio/godette/hello.wav"
+dest_files=[ "res://.import/hello.wav-bb102531d54d712b2cc90b5887ff0abf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,64 @@
+date: Teda
+time: Meti
+
+# Period
+second: Ondsec
+minute: Utemin
+hour: Urho
+day: Ayd
+month: Nthmo
+year: Arye
+decade: Adedec
+century: Turycen
+
+# Weekday
+monday: Daymon
+tuesday: Daytues
+wednesday: Daywednes
+thursday: Daythurs
+friday: Dayfri
+saturday: Daysatur
+sunday: Daysun
+
+# Month
+january: Uaryjan
+february: Uaryfebr
+march: Rchma
+april: Rilap
+may: Aym
+june: Neju
+july: Lyju
+august: Useaug
+september: Embersept
+october: Oberoct
+november: Embernov
+december: Emberdec
+
+# Horoscope
+aries: Aries
+taurus: Taurus
+gemini: Gemini
+cancer: Cancer
+leo: Leo
+virgo: Virgo
+libra: Libra
+scorpius: Scorpius
+sagittarius: Sagittarius
+capricorn: Capricorn
+aquarius: Aquarius
+pisces: Pisces
+ophiuchus: Ophiuchus
+
+# Zodiac
+monkey: Monkey
+rooster: Rooster
+dog: Dog
+pig: Pig
+rat: Rat
+ox: Ox
+tiger: Tiger
+rabbit: Rabbit
+dragon: Dragon
+snake: Snake
+horse: Horse
+goat: Goat

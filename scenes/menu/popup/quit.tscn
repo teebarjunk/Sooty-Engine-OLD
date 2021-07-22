@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/menu/popup/popup.tscn" type="PackedScene" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node
+
+
+func _ready():
+	$popup.on_accept = funcref(get_tree(), \"quit\")
+
+"
+
+[node name="quit" type="Node"]
+script = SubResource( 1 )
+
+[node name="popup" parent="." instance=ExtResource( 1 )]
+icon = "godette_head"
+head = "Quit"
+text = "Are you sure you want to quit?"

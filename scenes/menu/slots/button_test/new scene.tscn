@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/menu/slots/button_test/button.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://scenes/menu/slots/button_test/button.shader" type="Shader" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+shader_param/zoom = 1.0
+shader_param/skew = Vector2( 0, 0 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+material = SubResource( 1 )
+position = Vector2( 495.964, 304.79 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/happytune.mp3-3b739c4c5af298df5992d971e87d46b1.mp3str"
+
+[deps]
+
+source_file="res://audio/music/happytune.mp3"
+dest_files=[ "res://.import/happytune.mp3-3b739c4c5af298df5992d971e87d46b1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

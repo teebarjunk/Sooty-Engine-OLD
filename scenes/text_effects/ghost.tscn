@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/text_effects/ghost.gd" type="Script" id=1]
+[ext_resource path="res://fonts/eb_garamond/EBGaramond-24-BoldItalic.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scenes/text_effects/ghost.tres" type="Material" id=3]
+[ext_resource path="res://bg/ferns.jpg" type="Texture" id=4]
+
+[node name="Node2D" type="Node2D"]
+material = ExtResource( 3 )
+position = Vector2( 345.26, 94.4504 )
+script = ExtResource( 1 )
+font = ExtResource( 2 )
+text = "the kings castle"
+
+[node name="ferns" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( -81.3242, -21.6776 )
+texture = ExtResource( 4 )

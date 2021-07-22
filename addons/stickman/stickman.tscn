@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/stickman/stickman.gd" type="Script" id=1]
+[ext_resource path="res://addons/stickman/godot_head.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+modulate = Color( 0.858824, 0.513726, 0.513726, 1 )
+position = Vector2( 336.102, 161.775 )
+script = ExtResource( 1 )
+head_texture = ExtResource( 2 )
+head_size = Vector2( 64, 64 )
+head_rotation = -0.039
+trunk_scale = 2.5

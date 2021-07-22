@@ -1,0 +1,131 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/menu/slots/button_test/button.gd" type="Script" id=1]
+[ext_resource path="res://scenes/menu/slots/button_test/save_slot.gd" type="Script" id=2]
+[ext_resource path="res://scenes/menu/slots/button_test/button.shader" type="Shader" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+shader_param/zoom = 1.0
+shader_param/skew = Vector2( 0, 0 )
+
+[node name="slot" type="HBoxContainer"]
+margin_right = 400.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 400, 100 )
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="image" type="TextureRect" parent="."]
+material = SubResource( 1 )
+margin_right = 198.0
+margin_bottom = 100.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 4 )
+expand = true
+script = ExtResource( 1 )
+zoom_scale = 0.125
+
+[node name="tween" type="Tween" parent="."]
+
+[node name="back" type="ColorRect" parent="."]
+margin_left = 202.0
+margin_right = 400.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+color = Color( 1, 1, 1, 0.5 )
+
+[node name="items" type="VBoxContainer" parent="back"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+size_flags_horizontal = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="HBoxContainer" parent="back/items"]
+margin_right = 182.0
+margin_bottom = 14.0
+
+[node name="name" type="Label" parent="back/items/label"]
+margin_right = 72.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "slot a"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save_time" type="Label" parent="back/items/label"]
+margin_left = 76.0
+margin_right = 182.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "January 3rd 2012"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="chapter" type="Label" parent="back/items"]
+margin_top = 18.0
+margin_right = 182.0
+margin_bottom = 32.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "The Woods"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="percent" type="Label" parent="back/items"]
+margin_top = 36.0
+margin_right = 182.0
+margin_bottom = 50.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "10%"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="goals" type="Label" parent="back/items"]
+margin_top = 54.0
+margin_right = 182.0
+margin_bottom = 68.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Goals: 3/10"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play_time" type="Label" parent="back/items"]
+margin_top = 72.0
+margin_right = 182.0
+margin_bottom = 86.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Play Time: 0:00:00"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

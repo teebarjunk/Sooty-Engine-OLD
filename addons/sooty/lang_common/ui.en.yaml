@@ -1,0 +1,33 @@
+start: Start
+continue: Continue
+save: Save
+load: Load
+erase: Erase
+back: Back
+quit: Quit
+extra: Extra
+settings: Settings
+controls: Controls
+language: Language
+credits: Credits
+achievements: Achievements
+rewards: Rewards
+
+# Audio
+audio: Audio
+volume: Volume
+sound: Sound
+music: Music
+ambience: Ambient
+mute: Mute
+
+# Graphics
+graphics: Graphics
+quality: Quality
+high: High
+medium: Medium
+low: Low
+
+# Window
+windowed: Windowed
+full_screen: Full Screen

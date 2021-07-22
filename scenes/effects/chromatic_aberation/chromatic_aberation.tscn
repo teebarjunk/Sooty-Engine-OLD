@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/effects/chromatic_aberation/chromatic_aberation_simple.shader" type="Shader" id=1]
+[ext_resource path="res://scenes/effects/chromatic_aberation/chromatic_aberation.gd" type="Script" id=2]
+[ext_resource path="res://bg/cell.webp" type="Texture" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/r_blur = 0.9
+shader_param/g_blur = 0.0
+shader_param/b_blur = 4.0
+shader_param/r_offset = Vector2( 0, -2 )
+shader_param/g_offset = Vector2( 0, 4 )
+shader_param/b_offset = Vector2( 0, 8 )
+
+[node name="chromatic_aberation" type="CanvasLayer"]
+scale = 0.064
+script = ExtResource( 2 )
+scale = 0.064
+power = 2.624
+
+[node name="cell" type="Sprite" parent="."]
+position = Vector2( 470.086, 210.457 )
+texture = ExtResource( 3 )
+
+[node name="image" type="ColorRect" parent="."]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

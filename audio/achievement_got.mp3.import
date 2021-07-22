@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/achievement_got.mp3-75f4a9623205bbac94b0c78530ae99c4.mp3str"
+
+[deps]
+
+source_file="res://audio/achievement_got.mp3"
+dest_files=[ "res://.import/achievement_got.mp3-75f4a9623205bbac94b0c78530ae99c4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

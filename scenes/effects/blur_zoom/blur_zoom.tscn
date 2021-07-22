@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://bg/cell.webp" type="Texture" id=1]
+[ext_resource path="res://scenes/effects/blur_zoom/blur_zoom.gd" type="Script" id=2]
+[ext_resource path="res://scenes/effects/blur_zoom/blur_zoom.shader" type="Shader" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+shader_param/center = Vector2( 0.5, 0.5 )
+shader_param/power = 0.209
+shader_param/radius = 0.29
+
+[node name="blur_zoom" type="CanvasLayer"]
+script = ExtResource( 2 )
+power = 0.077
+
+[node name="cell" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

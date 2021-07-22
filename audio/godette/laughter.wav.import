@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/laughter.wav-945f6add2f1dfa1df529bc3a0d9e60bd.sample"
+
+[deps]
+
+source_file="res://audio/godette/laughter.wav"
+dest_files=[ "res://.import/laughter.wav-945f6add2f1dfa1df529bc3a0d9e60bd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

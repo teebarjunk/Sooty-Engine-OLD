@@ -1,0 +1,64 @@
+date: Date
+time: Time
+
+# Period
+second: Second
+minute: Minute
+hour: Hour
+day: Day
+month: Month
+year: Year
+decade: Decade
+century: Century
+
+# Weekday
+monday: Monday
+tuesday: Tuesday
+wednesday: Wednesday
+thursday: Thursday
+friday: Friday
+saturday: Saturday
+sunday: Sunday
+
+# Month
+january: January
+february: February
+march: March
+april: April
+may: May
+june: June
+july: July
+august: August
+september: September
+october: October
+november: November
+december: December
+
+# Horoscope
+aries: Aries
+taurus: Taurus
+gemini: Gemini
+cancer: Cancer
+leo: Leo
+virgo: Virgo
+libra: Libra
+scorpius: Scorpius
+sagittarius: Sagittarius
+capricorn: Capricorn
+aquarius: Aquarius
+pisces: Pisces
+ophiuchus: Ophiuchus
+
+# Zodiac
+monkey: Monkey
+rooster: Rooster
+dog: Dog
+pig: Pig
+rat: Rat
+ox: Ox
+tiger: Tiger
+rabbit: Rabbit
+dragon: Dragon
+snake: Snake
+horse: Horse
+goat: Goat

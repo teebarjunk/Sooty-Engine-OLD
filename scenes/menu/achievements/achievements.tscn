@@ -1,0 +1,124 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/menu/achievements/achievements.gd" type="Script" id=1]
+[ext_resource path="res://scenes/menu/achievements/achievement.tscn" type="PackedScene" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.466667, 0.945098, 0.388235, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="achievements" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.8, 0.8, 0.8, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="items" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="space" type="Control" parent="items"]
+margin_right = 1024.0
+
+[node name="total_progress" type="VBoxContainer" parent="items"]
+margin_top = 16.0
+margin_right = 1024.0
+margin_bottom = 42.0
+
+[node name="label" type="Label" parent="items/total_progress"]
+margin_right = 1024.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "total"
+align = 1
+
+[node name="progress" type="HBoxContainer" parent="items/total_progress"]
+margin_top = 18.0
+margin_right = 1024.0
+margin_bottom = 26.0
+
+[node name="space2" type="Control" parent="items/total_progress/progress"]
+margin_right = 64.0
+margin_bottom = 8.0
+rect_min_size = Vector2( 64, 0 )
+
+[node name="bar" type="ProgressBar" parent="items/total_progress/progress"]
+margin_left = 68.0
+margin_right = 956.0
+margin_bottom = 8.0
+rect_min_size = Vector2( 0, 8 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/fg = SubResource( 1 )
+value = 50.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="space3" type="Control" parent="items/total_progress/progress"]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 8.0
+rect_min_size = Vector2( 64, 0 )
+
+[node name="backing" type="Control" parent="items"]
+margin_top = 58.0
+margin_right = 1024.0
+margin_bottom = 564.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scroll" type="ScrollContainer" parent="items/backing"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="items" type="VBoxContainer" parent="items/backing/scroll"]
+margin_right = 1024.0
+margin_bottom = 72.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="achievement" parent="items/backing/scroll/items" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1024.0
+margin_bottom = 72.0
+size_flags_vertical = 0
+
+[node name="clear" type="Button" parent="items"]
+margin_top = 580.0
+margin_right = 1024.0
+margin_bottom = 600.0
+text = "clear"
+__meta__ = {
+"_edit_use_anchors_": false
+}

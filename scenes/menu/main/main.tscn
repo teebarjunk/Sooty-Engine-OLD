@@ -1,0 +1,169 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/menu/main/main.gd" type="Script" id=1]
+
+[node name="main_menu" type="CanvasLayer"]
+layer = 100
+script = ExtResource( 1 )
+
+[node name="control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="TextureRect" parent="control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="submenu" type="Control" parent="control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -200.0
+margin_right = 250.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 500, 400 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="CenterContainer" parent="control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -300.0
+margin_right = 200.0
+margin_bottom = 300.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="items" type="VBoxContainer" parent="control/text"]
+margin_top = 283.0
+margin_right = 400.0
+margin_bottom = 317.0
+rect_min_size = Vector2( 400, 0 )
+alignment = 1
+
+[node name="title" type="RichTextLabel" parent="control/text/items"]
+margin_right = 400.0
+margin_bottom = 15.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0.25 )
+bbcode_enabled = true
+bbcode_text = "asd"
+text = "asd"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="subtitle" type="RichTextLabel" parent="control/text/items"]
+margin_top = 19.0
+margin_right = 400.0
+margin_bottom = 34.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0.25 )
+bbcode_enabled = true
+bbcode_text = "asd"
+text = "asd"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="options_backing" type="ColorRect" parent="control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttons" type="VBoxContainer" parent="control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -64.0
+margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="options" type="HBoxContainer" parent="control/buttons"]
+margin_right = 1024.0
+margin_bottom = 20.0
+custom_constants/separation = 4
+alignment = 1
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="button" type="Button" parent="control/buttons/options"]
+margin_left = 488.0
+margin_right = 536.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 48, 0 )
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="text" type="Label" parent="control/buttons/options/button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 48, 0 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "new"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="extra_options" type="HBoxContainer" parent="control/buttons"]
+margin_top = 24.0
+margin_right = 1024.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 0, 20 )
+custom_constants/separation = 4
+alignment = 1
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="settings" type="HBoxContainer" parent="control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lang" type="OptionButton" parent="control/settings"]
+margin_right = 74.0
+margin_bottom = 40.0
+text = "English"
+items = [ "English", null, false, 0, null, "Piggish Latinish", null, false, 1, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="version" type="Label" parent="control/settings"]
+modulate = Color( 1, 1, 1, 0.5 )
+margin_left = 78.0
+margin_top = 13.0
+margin_right = 125.0
+margin_bottom = 27.0
+text = "v1.0.01"
+__meta__ = {
+"_edit_use_anchors_": false
+}

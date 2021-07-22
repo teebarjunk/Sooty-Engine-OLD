@@ -1,0 +1,29 @@
+start: Début
+continue: Continuer
+save: Sauver
+load: Charge
+erase: Effacer
+back: Arrière
+quit: Quitter
+extra: Supplémentaire
+settings: Paramètres
+controls: Contrôles
+language: Langue
+
+# Audio
+audio: L'audio
+volume: Le volume
+sound: Du son
+music: Musique
+mute: Muet
+
+# Graphics
+graphics: Graphique
+quality: Qualité
+high: Haut
+medium: Moyen
+low: Faible
+
+# Window
+windowed: Fenêtré
+full_screen: Plein écran

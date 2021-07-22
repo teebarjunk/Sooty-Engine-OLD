@@ -1,0 +1,35 @@
+date: Date
+time: Temps
+
+# Periods
+second: Seconde
+minute: Minute
+hour: Heure
+day: Jour
+month: Mois
+year: An
+decade: Décennie
+century: Siècle
+
+# Weekday
+monday: Lundi
+tuesday: Mardi
+wednesday: Mercredi
+thursday: Jeudi
+friday: Vendredi
+saturday: Samedi
+sunday: Dimanche
+
+# Month
+january: Janvier
+february: Février
+march: Mars
+april: Avril
+may: Mai
+june: Juin
+july: Juillet
+august: Août
+september: Septembre
+october: Octobre
+november: Novembre
+december: Décembre

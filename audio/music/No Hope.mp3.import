@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/No Hope.mp3-b168e06b49113732dca4d3dc590b9cb0.mp3str"
+
+[deps]
+
+source_file="res://audio/music/No Hope.mp3"
+dest_files=[ "res://.import/No Hope.mp3-b168e06b49113732dca4d3dc590b9cb0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

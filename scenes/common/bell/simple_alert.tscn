@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/common/bell/simple_alert.gd" type="Script" id=1]
+
+[node name="simple_alert" type="CanvasLayer"]
+layer = 100
+script = ExtResource( 1 )
+
+[node name="control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -123.0
+margin_top = 6.0
+margin_right = 123.0
+margin_bottom = 67.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="backing" type="ColorRect" parent="control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.643137 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="center" type="CenterContainer" parent="control/backing"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="control/backing/center"]
+margin_left = 3.0
+margin_top = 22.0
+margin_right = 243.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 240, 16 )
+bbcode_enabled = true
+bbcode_text = "asd"
+text = "asd"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tween" type="Tween" parent="."]
