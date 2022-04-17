@@ -1,3 +1,9 @@
+Godot 3 version *CANCELED*.
+
+**[Long live Godot 4 version!](https://github.com/SootyEngine/sooty)**  
+
+[New docs here!](https://sootyengine.github.io/docs/)
+
 
 # Sooty Engine `0.1`
 
